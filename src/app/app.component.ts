@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {CardsDataModel} from "./model/cards-data.model";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,37 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cards';
+  posts: CardsDataModel[] = [
+    {
+      imageUrl: 'assets/images/tree.jpeg',
+      title: 'neat tree',
+      username: 'nature',
+      content: 'saw my awesome tree during my hike today !'
+    },
+    {
+      imageUrl: 'assets/images/mountain.jpeg',
+      title: 'snowy mountain',
+      username: 'claiming-lover',
+      content: 'the best pics appear after hard claiming'
+    },
+    {
+      imageUrl: 'assets/images/biking.jpeg',
+      title: 'biking',
+      username: 'sport man',
+      content: 'I am really love biking in cloudy day'
+    },
+    {
+      imageUrl: 'assets/images/tree.jpeg',
+      title: 'neat tree',
+      username: 'nature',
+      content: 'saw my awesome tree during my hike today !'
+    },
+    {
+      imageUrl: 'assets/images/mountain.jpeg',
+      title: 'snowy mountain',
+      username: 'claiming-lover',
+      content: 'the best pics appear after hard claiming'
+    }
+
+  ]
 }
